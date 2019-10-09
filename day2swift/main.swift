@@ -8,5 +8,47 @@
 
 import Foundation
 
-print("Hello, World!")
+var a : [Int]
+a=[Int]()
+//print(a[0])//error
+//add new array element
+var b = Array.init(repeating: 0, count: 1)
+print(b[0])
+a.append(10)
+a.append(34)
+a.append(24)
+a.append(40)
+a.append(50)
+a.append(60)
+a.append(20)
+a.append(15)
+print(a[0])
+for i in b{print(i)}
+for  i in 0...7{print(a[i])}
+print("total no of elements in array \(a.count)")
 
+print("total elements in array \(a.endIndex)")
+a=a+b
+print(a)
+var matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(matrix)
+for j in matrix
+{
+    for h in j
+    {
+        print(h,separator : "", terminator: "")
+    }
+}
+var m :Set<String> = ["india","canada","pakistan","usa"]
+//print(separator:"",terminator: "")  not working
+m.insert("jhanduke")
+print(m)
+var m2 :Set<String> = ["panjab","haryana","delhi","abohar"]
+print(m2)
+for g in m.sorted(){
+    print(g)
+}
+print("....................")
+for g in m2.sorted(){
+    print(g)
+}
