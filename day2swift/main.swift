@@ -40,7 +40,7 @@ for j in matrix
     }
 }
 var m :Set<String> = ["india","canada","pakistan","usa"]
-//print(separator:"",terminator: "")  not working
+print(m,separator:"",terminator: "")
 m.insert("jhanduke")
 print(m)
 var m2 :Set<String> = ["panjab","haryana","delhi","abohar"]
@@ -52,3 +52,45 @@ print("....................")
 for g in m2.sorted(){
     print(g)
 }
+//working with dictionary
+//var a = [int..key type : int .item type
+//var dictcountry = Dictionary<Int,String>() ist method
+var dictcountry = [Int : String]()
+dictcountry = [1: "mansa",2:"bti"]
+print(dictcountry)
+dictcountry.updateValue("jhunir", forKey: 3)
+dictcountry.updateValue("bathinda", forKey: 4)
+print(dictcountry)
+
+for item in dictcountry
+{
+    print(item.value,separator :"  ", terminator: "\n")
+    
+}
+func demo(x:String...){
+    for s in x {
+        print(s)
+        
+    }
+}
+func demo(x:Int...){
+    for s in x {
+        print(s)
+        
+    }
+}
+print(demo(x: "hello","world"))
+
+print(demo(x: 1,2,3,4,5))
+
+func demo1(firstString s1:String,secondString s2:String) -> String{
+    return s1+s2
+    
+}
+print(demo1(firstString: " hi ", secondString: "dandiwal"))
+
+func demo2(Int a:Int,Int b:Int) -> Int {
+    return a*b
+    
+}
+print(demo2(Int: 2324, Int: 21))
